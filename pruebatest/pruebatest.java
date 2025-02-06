@@ -17,13 +17,25 @@ class PruebasTest extends Prueba {
 	}
 	@Test
 	@DisplayName("Contar las palabras con espacio")
-	void palabrasespacio() {
-		 assert
+	void contarPalabras2() {
+		assertNotEquals(5,Prueba.contarPalabras("Esto tiene unas 3 palabras"));
+		
+	}
+	
+	@Test
+	@DisplayName("Se cuentan las letras que son diferentes")
+	void contarLetras() {
+		assertEquals(5,Prueba.contarLetrasDiferentes("Superfragilistrico"));
 		
 	}
 	
 	
-	
+	@Test
+	@DisplayName("Se cuentan las letras con espacio")
+	void contarLetras2() {
+		assertNotEquals(5,Prueba.contarPalabras("Superfragilistrico"));
+		
+	}
 	
 	
 }
